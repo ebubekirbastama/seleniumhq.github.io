@@ -12,7 +12,7 @@ aliases: [
 
 {{% pageinfo color="warning" %}}
 <p class="lead">
-   <i class="fas fa-language display-4"></i> 
+   <i class="fas fa-language d-4"></i> 
    Page being translated from 
    English to Portuguese. Do you speak Portuguese? Help us to translate
    it by sending us pull requests!
@@ -82,7 +82,7 @@ var capabilities = Capabilities.firefox();
   {{< /tab >}}
   {{< tab header="Kotlin" >}}
 firefoxOptions = FirefoxOptions()
-driver: WebDriver = new RemoteWebDriver(new URL("http://www.example.com"), firefoxOptions)
+driver: WebDriver = RemoteWebDriver(URL("http://www.example.com"), firefoxOptions)
 driver.get("http://www.google.com")
 driver.quit()
   {{< /tab >}}
@@ -159,7 +159,7 @@ opts.setPlatform('Windows XP');
 val chromeOptions = ChromeOptions()
 chromeOptions.setCapability("browserVersion", "67")
 chromeOptions.setCapability("platformName", "Windows XP")
-val driver: WebDriver = new RemoteWebDriver(new URL("http://www.example.com"), chromeOptions)
+val driver: WebDriver = RemoteWebDriver(URL("http://www.example.com"), chromeOptions)
 driver.get("http://www.google.com")
 driver.quit()
   {{< /tab >}}
